@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Save the Poor</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="mainPage.js"></script>
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+
+<body onload="getName()">
+    <center>
+        <br>
+        <button onclick="logout()" class="btn btn-danger" style="float: right; margin-right: 50px;">Logout </button>
+        <br>
+        <h1 id="usernameLbl"><b>Welcome!</b></h1>
+        <img src="logo.png" style="width: 400px; margin-top: -100px;">
+        <br>
+        <h2 style="margin-top: -40px;">Select a topic to see</h2>
+        <br>
+        <button style="background-color: transparent; border: 0px; border-bottom-width: 3px; border-bottom-color: black; border-bottom-style: solid; font-size: large; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" onclick="about()">About the designer</button>
+        <button style="background-color: transparent; border: 0px; border-bottom-width: 3px; border-bottom-color: black; border-bottom-style: solid; font-size: large; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-left: 20px;" onclick="poverty()">Povery in India</button>
+        <button style="background-color: transparent; border: 0px; border-bottom-width: 3px; border-bottom-color: black; border-bottom-style: solid; font-size: large; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-left: 20px;" onclick="government()">Governments contribution</button>
+        <br>
+        <button style="background-color: transparent; border: 0px; border-bottom-width: 3px; border-bottom-color: black; border-bottom-style: solid; font-size: large; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-top: 20px;" onclick="donation()">Donation sites</button>
+        <button style="background-color: transparent; border: 0px; border-bottom-width: 3px; border-bottom-color: black; border-bottom-style: solid; font-size: large; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-left: 20px;" onclick="comment()">Post a comment</button>
+    </center>
+</body>
+
+</html>
